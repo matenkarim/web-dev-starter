@@ -9,6 +9,13 @@ function loaded() {
     console.log(hello);
 }
 
+function buttonClick() {
+    const hello = sayHello();
+    alert(hello);
+}
+
+document.getElementById('button').addEventListener('click', buttonClick);
+
 /**
  * This function returns the string 'hello'
  * @return {string} the string hello
@@ -16,3 +23,4 @@ function loaded() {
 export function sayHello() {
     return 'hello';
 }
+

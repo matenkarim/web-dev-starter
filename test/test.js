@@ -7,5 +7,9 @@ QUnit.module('hello', function() {
         assert.equal(result, 'hello');
     });
 
+    QUnit.test('sayHello() returns a string', function(assert) {
+        var result = sayHello();
+        assert.ok(typeof result === 'string', 'sayHello() should return a string');
+    });
 
 });
